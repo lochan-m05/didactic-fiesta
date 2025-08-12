@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.search-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90vw;
+}
+
+.search-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.search-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.job-card {
+  background-color: white;
+  color: #333;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.job-card h3 {
+  margin-top: 0;
+  color: #007bff;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.job-card p {
+  margin: 8px 0;
+}
+
+.loading {
+  margin-top: 30px;
+}
+
+.loading p {
+  font-size: 18px;
+  color: #007bff;
+}
